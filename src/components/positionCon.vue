@@ -239,16 +239,13 @@
         }
       },
       handleSelectionChange(val) {
-        console.log("handleSelectionChange--", val);
         this.tableChecked = val;
       },
       handleSizeChange(val) {
-        console.log(`每页 ${val} 条`);
         this.pageSize = val;
         this.checkData(this.page);
       },
       handleCurrentChange(val) {
-        console.log(`当前页: ${val}`);
         this.page = val;
         this.checkData(val);
       },
@@ -262,7 +259,7 @@
           if (valid) {
             this.$axios
               .post(
-                "/apil/positionType/insertOrUpdatePositionType",
+                "/recruit/positionType/insertOrUpdatePositionType",
                 this.$qs.stringify({
                   pt_name: deviceName,
                   pt_state: accessPassword
@@ -294,16 +291,12 @@
         var that = this;
         var pt_id = this.pt_id;
         var deviceName = this.deviceName;
-        console.log(deviceName);
-        console.log(pt_id);
         this.$axios
           .post(
-            "/apil/positionType/selectPositionTypeByPage"
+            "/recruit/positionType/selectPositionTypeByPage"
           )
           .then(function (res) {
             if (res.data.code == 1) {
-              console.log(res.data.obj.records);
-
               that.tableData3 = res.data.obj.records;
             } else {
               that.$message(res.data.msg, "error");
@@ -343,22 +336,19 @@
         const length = this.tableChecked.length;
         var ids = "";
         for (let i = 0; i < length; i++) {
-          console.log(this.tableChecked[i].pt_id);
           ids += this.tableChecked[i].pt_id + ",";
         }
         ids = ids.slice(0, ids.length - 1);
-        console.log(ids);
         var that = this;
         this.$axios
           .post(
-            "/apil/positionType/deletePositionTypeById",
+            "/recruit/positionType/deletePositionTypeById",
             this.$qs.stringify({
               ptid: ids
             })
           )
           .then(function (res) {
             //  that.dialogFormVisible = false;
-            console.log(res);
             if (res.data.code == 1) {
               that.centerDialogVisible = false;
               that.$message("操作成功", "success");
@@ -406,7 +396,7 @@
         console.log(pt_id)
         this.$axios
           .post(
-            "/apil/workPlace/insertOrUpdateWorkPlace",
+            "/recruit/workPlace/insertOrUpdateWorkPlace",
             this.$qs.stringify({
               pt_id: pt_id,
               pt_name: deviceName,

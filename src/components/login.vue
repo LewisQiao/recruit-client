@@ -85,28 +85,25 @@
             console.log(this.loginform.username, this.loginform.password);
             this.$axios
               .post(
-                "/apil/admins/adminLogin",
+                "/recruit/admins/adminLogin",
                 this.$qs.stringify({
                   m_username: this.loginform.username,
                   m_password: this.loginform.password
                 })
               )
               .then(function (res) {
-                console.log(res.data);
                 if (res.data.code == 1) {
                   //把当前登陆用户信息存入state中
                   that.$store.commit("SAVE_USERINFO", res.data.t);
 
                   //判断复选框是否被勾选，勾选则调用配置cookie的方法
                   if (that.checked == true) {
-                    console.log("checkde=true");
                     //传入账号名，密码和保存天数3个参数
                     that.setCookie(
                       that.loginform.username,
                       that.loginform.password,
                     );
                   } else {
-                    console.log("清空cookie");
                     //清空Cookie
                     that.clearCookie();
                   }
@@ -122,7 +119,6 @@
                 that.$message("服务错误", "error");
               });
           } else {
-            console.log("error submit!!");
             return false;
           }
         });
