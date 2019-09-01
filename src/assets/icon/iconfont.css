@@ -1,0 +1,31 @@
+@font-face {font-family: "iconfont-ali";
+  src: url('iconfont.eot?t=1555248666129'); /* IE9 */
+  src: url('iconfont.eot?t=1555248666129#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPIAAsAAAAAB/AAAAN8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDJIMKATYCJAMMCwgABCAFhR0HORsDB8gekiQlABJIgCKJwMsgePr3r7r16n0MjGjOhAAWRtwdLqxUysiwo12Hyv7/rbWPmA9mZ/GSIZZUlt0/azZ3mCSP2hKPkNQaJZLMJ/D/c8x0UTqw/GubS1RbF1cBzQpwzzsvioYndO9ADshvUS+ZWM++eB8CRJNPFwkdXSPjkI6FLBNAli8ROUivmLAD+YKP4HbstchOHHyzyTwHYEfy+/ITAuKDwVHI2pGFvQKEvsR/8WooCDFdIhBv5wCsQ6BALYAFmdnpmkxSFqkliehAlTyc7mIRzFb+IIBEFGrci/7jGRAXkhsLQCVGDXzJ5VwIfPEewACgALgQ2wTcQ2zqRkULYlPTS+o2Xz9OPvs0JVnevx//8GHwkqNFh641x8TFXHhQFV746dPUhw8THXM/fsS90bHp5y9Xni4wvvsQB6+KcefuVZiDlXKxNPb8/Uo9UiNypWJO9t5U2YsJXcqK25IhB0TDl0sn7u09vkgIf3x8PX5//wxQtkv4EyGcfDgLfKETZaO2MVzwMDAPIjK6XB8VcjH5+Eoig/xtR6IqVAx/Gv8R75/y97gxZY+vyMACYRjkgmNghOEFOJLQL/DIw3tET40kKUl8rpl4sGAUpjlenT1/VuKcRK//j1zHT4rvIBr5/2EWhI7Iv9qMh9hsxQn/4y9xTt3r6F3+naQrfnX+QLy/dnyglqZrO+IZtxNvR22sa54MhyebBcZX/NwbgGXIQk02vwEC2q3Jf+9vGPRe3S0lNPzxYywAnz+mshNHwC7wAfj35hb4V+KJDTbUoqutL+Ki2KP03bfDAApsNX+oECCZ3+WatMm5IMSSVoDBowiUWCqRFlsPDjG0gEss/RBNDVOHY0jhAEVsFFDNOYCQyQ0Y4vkESiZ/SIv9B4d0SQOXTKmBaCZK+5kxlMuh6Pa1yDEUyMo6kXnToMzKMtOfdHOaPIpiTOOcepFOmkTHlXuI3+Nri/ejgc6WG9y4GGCMEuqYOumDp6GmmcRyTAV55pEYs4JeL/Uf5OFNHTJpxwHhYCAChBXWIcjwmBhQ2Z2R2djcDYeGzCiISAzN6syZUFEX7ySIg4s8OoIfD76JyH6VMbnkVb/iEkckAINBIVAcTHQIfUBENIWJKqt7lgLCw/AgLQhZBPHSVnSqynMNjf7ch4BoyNUqRlQs/qJVsdUYL2HyiiU6BwA=') format('woff2'),
+  url('iconfont.woff?t=1555248666129') format('woff'),
+  url('iconfont.ttf?t=1555248666129') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1555248666129#iconfont-ali') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont-ali {
+  font-family: "iconfont-ali" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-ali"],[class*=" icon-ali"]{
+  font-family: "iconfont-ali" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-aligouwuche:before {
+  content: "\e60e";
+}
+
+.icon-alimima:before {
+  content: "\e62f";
+}
+
